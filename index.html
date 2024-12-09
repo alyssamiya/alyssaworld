@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif ;
+        }
+        
+        .topnav-centered {
+          overflow: hidden;
+          background-color: #e7aedc;
+        }
+        
+        .topnav-centered a {
+        float: none;
+        color:#fbfafb;
+        text-align: center;
+        padding: 20px 22px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+        
+        .topnav-centered a:hover {
+          background-color: #f76eee;
+          color: rgb(55, 49, 54);
+        }
+        
+        .topnav-centered a.active {
+          background-color: #04AA6D;
+          color: white;
+        }
+
+        h1 {text-align: center;}
+        p {text-align: center;}
+        div {text-align: center;}
+
+        .fa {
+        padding: 10px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        }
+
+        .fa-twitter {
+         background: #55ACEE;
+         color: white;
+        }
+
+        .fa-instagram {
+        background: #125688;
+        color: white;
+        }
+
+        .fa-pinterest {
+         background: #cb2027;
+         color: white;
+        }
+
+        .fa-snapchat-ghost {
+         background: #fffc00;
+         color: white;
+         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.text {
+  color: #9d1067;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: start;
+}
+
+        </style>
+        </head>
+
+<body>
+  <title> Homepage </title>
+<!-- Navigation -->
+<div class="topnav-centered">
+  <a href="personal.html" target="_blank">Personal Information</a>
+  <a href="music.html" target="_blank"> Music Playlists</a>
+  <a href="experience.html" target="_blank"> Experiences</a>
+  <a href="education.html" target="_blank">Educational Background</a>
+  <a href="support.html" target="_blank"> Support Systems</a>
+  <a href="https://www.instagram.com/alyssazharr_/" class="fa fa-instagram"></a>
+  <a href="https://x.com/aimiaikaela" class="fa fa-twitter"></a>
+  <a href="https://www.pinterest.com/alyssazhar/" class="fa fa-pinterest"></a>
+  <a href="https://accounts.snapchat.com/v2/welcome" class="fa fa-snapchat-ghost"></a>
+  </ul>
+</div>
+      
+
+<!-- Slide Show -->
+<section>
+  <div class="text">Welcome to My Website! &#127872;</div>
+  <img class="mySlides" src="image/lyssa1.jpg"
+  style="width:100%;">
+  <img class="mySlides" src="image/lyssa.jpg"
+  style="width:100%">
+  <img class="mySlides" src="image/lyssa3.jpg"
+  style="width:100%">
+ 
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>

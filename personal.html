@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  
+      background-image: url('image/wallpaper.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    
+  background-color: #b1709e;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: rgb(228, 190, 224);
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: rgb(170, 107, 143);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+  
+  }
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+</style>
+</head>
+<body>
+<title> Personal Page</title>
+<a href= "index.html">Back to Welcome Page</a>
+
+<!-- MAIN (Center website) -->
+<div class="me">
+
+<h1>PERSONAL INFORMATION</h1>
+<hr>
+
+<h2>This page contains about me , my pets and my hobbies</h2>
+
+<div id="myBtnContainer">
+  <button class="btn" onclick="filterSelection('all')"> Main</button>
+  <button class="btn" onclick="filterSelection('me')"> About Me</button>
+  <button class="btn" onclick="filterSelection('pets')"> My Pets</button>
+  <button class="btn" onclick="filterSelection('hobby')"> My Hobbies</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+  <div class="row">
+  <div class="column me" >
+    <div class="content">
+    <img src="image/alyssaa.jpg" style="width:100%">
+      <h4>Alyssa Nor bt Nor Azhar</h4>
+      <p>Birthdate: 10 July 2004</p>
+      <p> Birth place: Kuala Lumpur</p>
+    </div>
+  </div>
+    <div class="column me">
+    <div class="content">
+    <img src="image/sibs.jpg" style="width:100%">
+      <h4>Siblings</h4>
+      <p>3rd of 6 siblings</p>
+      <p>Only girl</p>
+    </div>
+  </div>
+  <div class="column me">
+    <div class="content">
+    <img src="image/uitm.jpg" style="width:100%">
+      <h4>University Student</h4>
+      <p>Study: UiTM Rembau</p>
+      <p> Year: 2022/2024</p>
+    </div>
+  </div>
+  <div class="column me">
+    <div class="content">
+    <img src="image/matcha.jpg" style="width:100%">
+      <h4>Favorite Food and Drink</h4>
+      <p>Food: Western Foods</p>
+      <p>Drink: Matcha</p>
+    </div>
+  </div>
+  <div class="column me">
+    <div class="content">
+    <img src="image/bunga.png" style="width:100%">
+      <h4>Favorite Colors</h4>
+      <p>Pastel Colors</p>
+      <p> Most Favorite: Pink</p>
+    </div>
+  </div>
+  
+  <div class="column pets">
+    <div class="content">
+      <img src="image/momot.jpg" style="width:100%">
+      <h4>Nyomot</h4>
+      <p>The first child</p>
+      <p> Loves to sleep</p>
+    </div>
+  </div>
+  <div class="column pets">
+      <div class="content">
+      <img src="image/capang.jpg" style="width:100%">
+      <h4>Capang</h4>
+      <p>Second Child</p>
+      <p> Loves to annoyed nyomot</p>
+   </div>
+  </div>
+  
+  <div class="video-container">
+   <div class="column hobby">
+    <video controls style= "width: 100%">
+  <source src="video/for2 (2).mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
+</div>
+
+  <div class="column hobby">
+    <div class="content">
+    <img src="image/ferrari.jpg" style="width:100%">
+      <h4>Watching Formula 1</h4>
+      <p> Fav team: Ferari
+      <p>Fav driver: Charles Leclerc</p>
+    </div>
+  </div>
+  <div class="column hobby">
+    <div class="content">
+    <img src="image/interlagos.png" style="width:100%">
+      <h4>Formula 1</h4>
+      <p>Fav track: Interlagos</p>
+      <p> Country: Brazil</p>
+    </div>
+  </div>
+    <div class="column hobby">
+    <div class="content">
+    <img src="image/charless.jpg" style="width:100%">
+      <h4>Formula 1</h4>
+      <p>Charles </p>
+      <p> Ferari</p>
+    </div>
+  </div>
+
+
+  <div class="column hobby">
+    <div class="content">
+      <img src="image/barca5.jpg" style="width:100%">
+      <h4>Football</h4>
+      <p>Fav club: Barcelona</p>
+      <p> Fav player: Gavi</p>
+    </div>
+  </div>
+  <div class="column hobby">
+    <div class="content">
+    <img src="image/match.jpg" style="width:100%">
+      <h4>Football</h4>
+      <p>Fav Match: La Liga Oct 27 </p>
+      <p> Venue: Santiago Barnabeu</p>
+    </div>
+  </div>
+   <div class="column hobby">
+    <div class="content">
+    <img src="image/gavi.png" style="width:100%">
+      <h4>Football</h4>
+      <p>Gavi </p>
+      <p> Barcelona</p>
+    </div>
+  </div>
+  <div class="column hobby">
+    <div class="content">
+    <img src="image/book.png" style="width:100%">
+      <h4>Reading</h4>
+      <p>Fav book: Cruel Prince </p>
+    </div>
+  </div>
+   <div class="column hobby">
+    <div class="content">
+    <img src="image/love.png"  style="width:100%">
+      <h4>Reading</h4>
+      <p>Fav Genre: Romance</p>
+    </div>
+  </div>
+   <div class="column hobby">
+    <div class="content">
+    <img src="image/holly.png" style="width:100%">
+      <h4>Reading</h4>
+      <p>Fav Author: Romance</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<a href= "music.html">Next Page</a>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  
+  background-image: url('image/cutesy.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+background-color: #b1709e;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+
+}
+
+h1 {
+  text-shadow: 2px 2px;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+  <title> Education Page </title>
+  <a href= "experience.html">Back to Previous Page</a>
+<h1> EDUCATIONAL BACKGROUND </h1>
+<p> Click on The Picture to Enlarge. </p>
+
+<div style="text-align:center">
+  <h2 style="text-align:center; background-color:rgb(194, 71, 122);" >Sekolah Rendah Kebangsaan Taman Kosas </h2>
+  <p>2011-2016</p>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="image/sktk1.jpg" alt="SKTK" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/sktk.jpg" alt="Class of Standard 6" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/sktk2.jpg" alt="Prefects" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/sktk3.jpg" alt="Cheerleders" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<div style="text-align:center">
+  <h2 style="text-align:center; background-color:rgb(235, 167, 195);">Sekolah Menengah Kebangsaan Taman Kosas</h2>
+  <p>2017-2021</p>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="image/smktk.jpg" alt="SMKTK" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/Smktk1.jpg" alt="Class of Year 5" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/smktk2.jpg" alt="Prefects' Appreciation" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/education.jpg" alt="Graduation" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<div style="text-align:center">
+  <h2 style="text-align:center; background-color:rgb(171, 62, 107);">Universiti Teknologi Mara</h2>
+  <p>2022-2025</p>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="image/uitmm.jpg" alt="UITM Campus Rembau" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/uitm2.jpg" alt="Class G" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/uitm1.jpg" alt="The Girls' Appreciation" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/uitm3.jpg" alt="Dean's Lists" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+<a href= "support.html">Next Page</a>
+
+</body>
+</html>
